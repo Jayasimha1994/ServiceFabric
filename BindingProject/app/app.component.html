@@ -1,0 +1,28 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div class="main">
+  <h1>Programming Languages</h1>
+  <div class="addItem">
+    <input [(ngModel)]="newItem" placeholder="AddItem" class="addText">
+    <button (click)="pushItem()">Add</button>
+  </div>
+  <ul>
+    <li *ngFor="let i of items; let ind=index">
+      {{i}}
+      <span (click)="removeItems(ind)">x</span>
+    </li>
+  </ul>
+  
+  
+  <!-- <p>Project of {{obj.Name}}</p> -->
+  <!-- <app-first></app-first> -->
+  <!-- <a routerLink="/member">Member</a> -->
+  <!-- <a routerLink="/product">Product</a> -->
+  <!-- <app-product></app-product>
+  <app-member></app-member> -->
+  <!-- <router-outlet></router-outlet> -->
+  <!-- <li *ngFor="let i of Lang">{{i}}</li> -->
+
+  <!-- <p *ngIf="isTrue">Hello</p> -->
+  <!-- <p *ngIf="isTrue; else firstTemp">Hello</p> -->
+  <!-- <ng-template #firstTemp>This is first Template</ng-template> -->
+  <!-- <p *ngIf="myName !='Jayasimha' && false">True</p> -->
